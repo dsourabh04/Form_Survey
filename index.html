@@ -1,0 +1,177 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+	<!-- Linking css file -->
+	<link rel="stylesheet" href="style.css">
+	<title>Survey Form</title>
+	<div class="header">
+		<h1>Solar Panel Pvt Ltd.</h1>
+		
+	
+	</div>
+	
+	
+	
+	
+	
+</head>
+
+<a href="#"><img id="logo" src="download.png "></a>
+
+
+<body>
+
+	<!-- Creating the form container -->
+	<div class="container">
+		<h1>Survey Form</h1>
+
+		<!-- Contains error -->
+		<h4 id="errorText"></h4>
+
+		<!-- Form element -->
+		<form id="surveyForm">
+
+			<label for="name">
+				Full Name:
+			</label><br>
+			<input type="text" id="name" name="name" required><br>
+
+			<label for="age">
+				Age:
+			</label><br>
+			<input type="int" id="age" name="age" required><br>
+
+			<label for="email">
+				Email:
+			</label><br>
+			<input type="text" id="email" name="email" required><br> <br>
+
+			<label for="phone">
+				Phone:
+			</label><br>
+			<input type="int" id="phone" name="phone" required><br> <br>
+
+			<label>
+				Does your house have solar panel?
+			</label><br>
+			<input type="radio" id="indoor" name="type" value="Indoor" required>
+
+			<label for="indoor">
+				Yes
+			</label><br>
+			<input type="radio" id="outdoor" name="type" value="Outdoor" required>
+
+			<label for="outdoor">
+				No
+			</label><br>
+
+
+			<br>
+
+			<style>
+				/* Style for the dropdown menu */
+				#solarUse {
+					width: 150px;
+					/* Adjust the width as needed */
+					padding: 10px;
+					/* Adjust the padding as needed */
+					border: 2px solid #ccc;
+					/* Border size and color */
+					border-radius: 5px;
+					/* Border radius for rounded corners */
+					font-size: 16px;
+					/* Font size */
+				}
+			</style>
+
+			<label for="solarUse">Solar Use:</label>
+			<select id="solarUse" name="solarUse">
+				<option value="Residential">Residential</option>
+				<option value="Commercial">Commercial</option>
+				<option value="Industrial">Industrial</option>
+				<option value="Agricultural">Agricultural</option>
+				<option value="Public Sector">Public Sector</option>
+
+			</select>
+
+			<style>
+				/* Style for the dropdown menus */
+				.dropdown {
+					display: inline-block;
+					margin-right: 40px;
+					/* Adjust the margin as needed */
+				}
+
+				.dropdown select {
+					width: 200px;
+					/* Adjust the width as needed */
+					padding: 10px;
+					/* Adjust the padding as needed */
+					border: 2px solid #ccc;
+					/* Border size and color */
+					border-radius: 5px;
+					/* Border radius for rounded corners */
+					font-size: 16px;
+					/* Font size */
+				}
+			</style>
+
+
+
+			<label for="solution">Solution:</label>
+			<div class="dropdown">
+				<select id="solution" name="solution">
+					<option value="On-grid">Solar Water Heating</option>
+					<option value="Off-grid">Solar Roof Top</option>
+					<option value="Hybrid">Maintenance</option>
+					<option value="Hybrid">Other Solar Products</option>
+					<!-- Add more options as needed -->
+				</select>
+			</div>
+			<br><br>
+
+
+
+			<label for="feedback">
+				Your Message:
+			</label><br>
+			<input type="textarea" id="feedback" name="feedback"><br>
+
+			<br><br><br>
+
+
+			<!-- /* Previous and Next*/ -->
+
+			<div class="form-container">
+				<a href="#" class="previous round">&laquo; Previous</a>
+				<a href="next.html" class="next round"> Next &raquo;</a href="next.html">
+					
+			
+			  </div>
+			  
+			  
+
+			<button type="submit">
+				Submit
+			</button>
+
+		</form>
+
+	</div>
+	
+	<footer>
+		<p>Thank-You...Visit Again</p>
+		
+	  </footer>
+
+	  
+	<!-- linking javascript file -->
+	<script src="script.js"></script>
+</body>
+
+</html>
